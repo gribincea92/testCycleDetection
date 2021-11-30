@@ -2,6 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://gribincea92.github.io/testCycleDetection",
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
@@ -45,6 +46,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.26.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.0"
   },
@@ -55,7 +57,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .ts,.tsx --max-warnings 0",
     "lint:fix": "eslint src --ext .ts,.tsx --max-warnings 0 --fix",
-    "i18n": "node src/i18n/flattenKeys.ts"
+    "i18n": "node src/i18n/flattenKeys.ts",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

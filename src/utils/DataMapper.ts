@@ -14,13 +14,15 @@ const mapToEdgeDataList = (input: InputNodeMapType): EdgeData[] => {
 
   Object.entries(input).forEach(([node, nodeContent]) => {
     const { adjList } = nodeContent;
-    adjList.forEach((adjNode) => {
-      edges.push({
-        id: `${node}-${adjNode}`,
-        from: node,
-        to: adjNode,
+    if (adjList) {
+      adjList.forEach((adjNode) => {
+        edges.push({
+          id: `${node}-${adjNode}`,
+          from: node,
+          to: adjNode,
+        });
       });
-    });
+    }
   });
 
   return edges;

@@ -1,0 +1,15 @@
+{
+  "main": {
+    "title": "Graph",
+    "formTitle": "Input",
+    "textAreaPlaceholder": "Introduce NodeMap here...",
+    "submitButton": "Submit",
+    "success": "No cycles detected!",
+    "errors": {
+      "invalidInput": "Invalid input!",
+      "notParseableInput": "Not parseable input!",
+      "emptyInput": "Empty input!",
+      "hasCycle": "Cycle has been detected!"
+    }
+  }
+}

@@ -40,7 +40,7 @@ const OutputSection: FC = () => {
 
     return (
       <Paper elevation={0}>
-        <Canvas nodes={data.nodes} edges={data.edges} maxHeight={512} maxWidth={1024} />
+        <Canvas nodes={data.nodes} edges={data.edges} maxHeight={768} maxWidth={1024} />
       </Paper>
     );
   };
